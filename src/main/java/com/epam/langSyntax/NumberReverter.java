@@ -14,11 +14,6 @@ public class NumberReverter {
     }
 }
 
-class Test2{
-    public static void main(String[] args) {
-        NumberReverter reverter = new NumberReverter();
-        reverter.revert(489);
-    }
-}
+
 
 

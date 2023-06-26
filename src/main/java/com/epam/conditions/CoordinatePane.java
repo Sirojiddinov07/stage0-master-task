@@ -16,10 +16,3 @@ public class CoordinatePane {
     }
 }
 
-class Test5{
-    public static void main(String[] args) {
-        CoordinatePane coordinatePane = new CoordinatePane();
-        coordinatePane.printQuadrant(3,-4);
-    }
-}
-

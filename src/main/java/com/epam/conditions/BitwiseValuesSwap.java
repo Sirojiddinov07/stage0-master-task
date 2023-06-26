@@ -11,10 +11,3 @@ public class BitwiseValuesSwap {
         System.out.println("After swap: first = " + first + ", second = " + second);
     }
 }
-
-class Test6{
-    public static void main(String[] args) {
-        BitwiseValuesSwap bitwiseValuesSwap = new BitwiseValuesSwap();
-        bitwiseValuesSwap.swap(3,5);
-    }
-}

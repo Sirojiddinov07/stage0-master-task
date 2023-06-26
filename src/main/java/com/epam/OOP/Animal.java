@@ -18,9 +18,3 @@ public class Animal {
     }
 }
 
-class Test{
-    public static void main(String[] args) {
-        Animal animal=new Animal("red", 1, false);
-        System.out.println(animal.getDescription());
-    }
-}

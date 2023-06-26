@@ -10,8 +10,5 @@ public class MultiplicationTable {
             System.out.println(numberTableToPrint + " x " + i + " = " + (numberTableToPrint * i));
         }
     }
-    public static void main(String[] args) {
-        MultiplicationTable multiplicationTable = new MultiplicationTable();
-        multiplicationTable.printTable(5);
-    }
+
 }

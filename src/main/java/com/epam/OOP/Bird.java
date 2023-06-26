@@ -11,11 +11,4 @@ public class Bird extends Animal {
     }
 }
 
-class Test2 {
-    public static void main(String[] args) {
 
-        Bird myBird = new Bird();
-        System.out.println(myBird.getDescription());
-
-    }
-}

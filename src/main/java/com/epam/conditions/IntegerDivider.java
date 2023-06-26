@@ -16,10 +16,4 @@ public class IntegerDivider {
         }
     }
 }
-class Test4{
-    public static void main(String[] args) {
-        IntegerDivider divider = new IntegerDivider();
-        divider.printCompletelyDivided(2, 0);
 
-    }
-}

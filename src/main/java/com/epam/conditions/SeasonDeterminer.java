@@ -25,9 +25,3 @@ public class SeasonDeterminer {
         }
     }
 }
-class Test{
-    public static void main(String[] args) {
-        SeasonDeterminer seasonDeterminer = new SeasonDeterminer();
-        seasonDeterminer.tellTheSeason(12);
-    }
-}

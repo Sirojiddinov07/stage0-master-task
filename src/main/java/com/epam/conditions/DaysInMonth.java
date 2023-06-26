@@ -1,52 +1,36 @@
 package com.epam.conditions;
 
 public class DaysInMonth {
+
     public void printDays(int year, int month) {
-        // Check if year is negative
         if (year < 0) {
-            System.out.println("Invalid date");
+            System.out.println("invalid date");
             return;
         }
-
-        if (month < 1 || month > 12) {
-            System.out.println("Invalid date");
+        String result = switch (month) {
+            case 1, 3, 5, 7, 8, 10, 12 -> "31";
+            case 4, 6, 9, 11 -> "30";
+            case 2 -> "";
+            default -> "invalid date";
+        };
+        if (result.length() != 0) {
+            System.out.println(result);
             return;
         }
-
-        boolean isLeapYear = false;
-        if (year % 4 == 0) {
-            if (year % 100 == 0) {
-                if (year % 400 == 0) {
-                    isLeapYear = true;
-                }
-            } else {
-                isLeapYear = true;
-            }
+        if (ifLeapYear(year)) {
+            System.out.println("29");
+        } else {
+            System.out.println("28");
         }
-
-        int daysInMonth;
-        switch (month) {
-            case 1, 3, 5, 7, 8, 10, 12:
-                daysInMonth = 31;
-                break;
-            case 4, 6, 9, 11:
-                daysInMonth = 30;
-                break;
-            case 2:
-                daysInMonth = isLeapYear ? 29 : 28;
-                break;
-            default:
-                System.out.println("Invalid date");
-                return;
-        }
-
-        System.out.println("There are " + daysInMonth + " days in " + year + "/" + month);
     }
-}
 
-class Test3{
-    public static void main(String[] args) {
-        DaysInMonth daysInMonth = new DaysInMonth();
-        daysInMonth.printDays(2000, 2);
+    private boolean ifLeapYear(int year) {
+        boolean result = false;
+        if (year % 4 == 0) {
+            result = true;
+            if (year % 100 == 0)
+                result = year % 400 == 0;
+        }
+        return result;
     }
 }

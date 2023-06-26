@@ -16,9 +16,3 @@ public class DigitsSumCalculator {
     }
 
 }
-class Test{
-    public static void main(String[] args) {
-        DigitsSumCalculator calculator = new DigitsSumCalculator();
-        calculator.calculateSum(4567);
-    }
-}
